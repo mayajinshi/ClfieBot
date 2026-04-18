@@ -1,13 +1,3 @@
-# ============================================================
-#Group Manager Bot
-# Author: LearningBotsOfficial (https://github.com/LearningBotsOfficial) 
-# Support: https://t.me/LearningBotsCommunity
-# Channel: https://t.me/learning_bots
-# YouTube: https://youtube.com/@learning_bots
-# License: Open-source (keep credits, no resale)
-# ============================================================
-
-
 from pyrogram import Client, filters
 from pyrogram.types import (
     InlineKeyboardButton,
@@ -25,18 +15,16 @@ def register_handlers(app: Client):
     async def send_start_menu(message, user):
         text = f"""
 
-   ✨ Hello {user}! ✨
+   ✨ ʜᴇʟʟᴏ {ᴜꜱᴇʀ}! ✨
 
-👋 I am Nomad 🤖 
+👋 ɪ ᴀᴍ ᴄʟꜰɪᴇʙᴏᴛ. 🤖
+─────────────────────
+- ꜱᴍᴀʀᴛ ᴀɪ ᴀɴᴛɪ-ꜱᴘᴀᴍ & ʟɪɴᴋ ꜱʜɪᴇʟᴅ
+- ᴀᴅᴀᴘᴛɪᴠᴇ ʟᴏᴄᴋ ꜱʏꜱᴛᴇᴍ (ᴜʀʟꜱ, ᴍᴇᴅɪᴀ, ʟᴀɴɢᴜᴀɢᴇ & ᴍᴏʀᴇ)
+- ᴍᴏᴅᴜʟᴀʀ & ꜱᴄᴀʟᴀʙʟᴇ ᴘʀᴏᴛᴇᴄᴛɪᴏɴ
+- ꜱʟᴇᴇᴋ ᴜɪ ᴡɪᴛʜ ɪɴʟɪɴᴇ ᴄᴏɴᴛʀᴏʟꜱ
 
-Highlights:
-─────────────────────────────
-- Smart Anti-Spam & Link Shield
-- Adaptive Lock System (URLs, Media, Language & more)
-- Modular & Scalable Protection
-- Sleek UI with Inline Controls
-
-» More New Features coming soon ...
+»» ᴍᴏʀᴇ ɴᴇᴡ ꜰᴇᴀᴛᴜʀᴇꜱ ᴄᴏᴍɪɴɢ ꜱᴏᴏɴ..
 """
 
         buttons = InlineKeyboardMarkup([
@@ -46,8 +34,8 @@ Highlights:
                 InlineKeyboardButton("⌂ Update ⌂", url=UPDATE_CHANNEL),
             ],
             [
-                InlineKeyboardButton("※ ŎŴɳēŔ ※", url=f"tg://user?id={OWNER_ID}"),
-                InlineKeyboardButton("Repo", url="https://github.com/LearningBotsOfficial/Nomade"),
+                InlineKeyboardButton("※ Owner ※", url=f"tg://user?id={OWNER_ID}"),
+                InlineKeyboardButton("※ Co-Owner ※", url=f"tg://user?id=1295909375"),
                 
             ],
             [InlineKeyboardButton("📚 Help Commands 📚", callback_data="help")]
