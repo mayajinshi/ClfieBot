@@ -51,7 +51,7 @@ class HealthHandler(BaseHTTPRequestHandler):
 def start_web_server():
     try:
         HTTPServer.allow_reuse_address = True
-server = HTTPServer(("0.0.0.0", PORT), HealthHandler)
+        server = HTTPServer(("0.0.0.0", PORT), HealthHandler)
         logging.info(f"🌐 Web server running on port {PORT}")
         server.serve_forever()
     except Exception as e:
