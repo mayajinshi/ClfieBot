@@ -26,16 +26,7 @@ except Exception as e:
     print("❌ ENV ERROR:", e)
     traceback.print_exc()
 
-try:
-    from security import verify_integrity, get_runtime_key
-
-    verify_integrity()
-    RUNTIME_KEY = get_runtime_key()
-
-    if not RUNTIME_KEY:
-        raise Exception("🚫 Security validation failed!")
-
-    print("✅ Security passed")
+    print("✅ ALL SET!")
 
 except Exception as e:
     print("❌ SECURITY ERROR:", e)
