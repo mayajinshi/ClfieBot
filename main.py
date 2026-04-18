@@ -94,7 +94,7 @@ try:
     register_all_handlers(app)
 
     print("🚀 Starting bot now...")
-
+    app.run()
     print("🛑 Bot stopped")
 
 except Exception as e:
