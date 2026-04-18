@@ -1,12 +1,3 @@
-# ============================================================
-# Group Manager Bot
-# Author: LearningBotsOfficial (https://github.com/LearningBotsOfficial) 
-# Support: https://t.me/LearningBotsCommunity
-# Channel: https://t.me/learning_bots
-# YouTube: https://youtube.com/@learning_bots
-# License: Open-source (keep credits, no resale)
-# ============================================================
-
 from pyrogram import Client, filters
 from pyrogram.types import Message, ChatMemberUpdated, ChatPermissions, ChatPrivileges
 from pyrogram.enums import ChatMemberStatus
@@ -14,7 +5,7 @@ from pyrogram.raw import types
 import logging
 import db
 
-DEFAULT_WELCOME = "👋 Welcome {first_name} to {title}!"
+DEFAULT_WELCOME = "✅ {first_name} 𝗝𝗨𝗦𝗧 𝗨𝗡𝗟𝗢𝗖𝗞𝗘𝗗 🔓 {title}!"
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
