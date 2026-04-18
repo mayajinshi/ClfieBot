@@ -1,15 +1,3 @@
-# ============================================================
-#Group Manager Bot
-# Author: LearningBotsOfficial (https://github.com/LearningBotsOfficial) 
-# Support: https://t.me/LearningBotsCommunity
-# Channel: https://t.me/learning_bots
-# YouTube: https://youtube.com/@learning_bots
-# License: Open-source (keep credits, no resale)
-# ============================================================
-
-
-
-
 import asyncio
 
 try:
@@ -60,7 +48,7 @@ class HealthHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         self.send_response(200)
         self.end_headers()
-        self.wfile.write(b"Nomade Bot is running")
+        self.wfile.write(b"ClfieBot is running")
 
     def do_HEAD(self):
         self.send_response(200)
