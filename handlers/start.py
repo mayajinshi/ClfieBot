@@ -24,10 +24,7 @@ More features coming soon...
 
         buttons = InlineKeyboardMarkup([
             [InlineKeyboardButton("Add to Group", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-            [
-                InlineKeyboardButton("Support", url=SUPPORT_GROUP),
-                InlineKeyboardButton("Updates", url=UPDATE_CHANNEL),
-            ],
+
             [
                 InlineKeyboardButton("Owner", url=f"t.me/lcarush")
             ],
