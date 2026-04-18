@@ -12,11 +12,8 @@ def register_handlers(app: Client):
     # ==========================================================
     async def send_start_menu(message, user):
         text = f"""
-✨ Hello {user}! ✨
-
-👋 I am ClfieBot 🤖
-
-─────────────────────
+💋 Hello {user}!
+👋 I am ClfieBot
 • Smart AI anti-spam & link shield  
 • Adaptive lock system  
 • Modular protection  
@@ -26,15 +23,15 @@ More features coming soon...
 """
 
         buttons = InlineKeyboardMarkup([
-            [InlineKeyboardButton("⚒️ Add to Group ⚒️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+            [InlineKeyboardButton("Add to Group", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
             [
                 InlineKeyboardButton("Support", url=SUPPORT_GROUP),
                 InlineKeyboardButton("Updates", url=UPDATE_CHANNEL),
             ],
             [
-                InlineKeyboardButton("Owner", url=f"tg://user?id={OWNER_ID}")
+                InlineKeyboardButton("Owner", url=f"t.me/clfie")
             ],
-            [InlineKeyboardButton("📚 Help Commands", callback_data="help")]
+            [InlineKeyboardButton("Help Commands", callback_data="help")]
         ])
 
         if message.text:
