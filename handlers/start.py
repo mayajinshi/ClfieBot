@@ -29,7 +29,7 @@ More features coming soon...
                 InlineKeyboardButton("Updates", url=UPDATE_CHANNEL),
             ],
             [
-                InlineKeyboardButton("Owner", url=f"t.me/clfie")
+                InlineKeyboardButton("Owner", url=f"t.me/lcarush")
             ],
             [InlineKeyboardButton("Help Commands", callback_data="help")]
         ])
