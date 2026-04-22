@@ -42,6 +42,23 @@ async def start_handler(client, message):
 
     await message.reply_text(text, reply_markup=kb)
 
+
+
+@app.on_message(filters.group & filters.command("purge"))
+async def purge_messages(client, message):
+    chat_id = message.chat.id
+
+    if not await is_admin(client, chat_id, message.from_user.id):
+        return
+
+    if not message.reply_to_message:
+        return await message.reply_text("Reply to a message and use /purge")
+
+    ids = list(range(message.reply_to_message.id, message.id + 1))
+
+    await client.delete_messages(chat_id, ids)
+
+
 # -------------------- HELP --------------------
 @app.on_message(filters.command("help"))
 async def help_handler(client, message):
