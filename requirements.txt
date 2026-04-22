@@ -2,5 +2,6 @@ pyrogram==2.0.106
 pymongo[srv]==4.6.3
 python-dotenv==1.0.1
 pyrogram
+pyrofork
 tgcrypto
 motor==3.4.0
